@@ -95,13 +95,13 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(230);
-  roofObject.display();
 
-  rope1.display()
-  rope2.display()
-  rope3.display()
-  rope4.display()
-  rope5.display()	
+  rope1.display();
+  rope2.display();
+  rope3.display();
+  rope4.display();
+  rope5.display();	
+  roofObject.display();
   bobObject1.display();
   bobObject2.display();
   bobObject3.display();
@@ -122,9 +122,10 @@ function keyPressed() {
   	if (keyCode === UP_ARROW) {
 
     	Matter.Body.applyForce(bobObject1.body,bobObject1.body.position,{x:-50,y:-45});
-    	//Matter.Body.applyForce(bobObject5.body,bobObject5.body.position,{x:50,y:-45});
-    	//Matter.Body.applyForce(bobObject3.body,bobObject3.body.position,{x:-50,y:-45});
-
+    	/*Matter.Body.applyForce(bobObject2.body,bobObject2.body.position,{x:-50,y:-45});
+    	Matter.Body.applyForce(bobObject3.body,bobObject3.body.position,{x:-50,y:-45});
+    	Matter.Body.applyForce(bobObject4.body,bobObject4.body.position,{x:-50,y:-45});
+		*/
   	}
 }
 
